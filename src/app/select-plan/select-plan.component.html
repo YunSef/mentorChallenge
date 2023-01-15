@@ -1,0 +1,37 @@
+<div>
+    <h2>{{plan.title}}</h2>
+    <p>{{plan.paragraph}}</p>
+    <div>
+        <ul>
+            <li>
+                <div >
+                    <img src="">
+                    <h3>Arcade</h3>
+                    <p>{{formatPricePerMonth(plan.priceArcade)}}</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="">
+                    <h3>Advanced</h3>
+                    <p>{{formatPricePerMonth(plan.priceAdvenced)}}</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="">
+                    <h3>Pro</h3>
+                    <p>{{formatPricePerMonth(plan.pricePro)}}</p>
+                </div>
+        </li>
+            <li>   
+                <div>
+                    <h3 [ngStyle]="{}">Monthly</h3>
+                </div>
+                <div>
+                    <h3 [ngStyle]="{}">Yearly</h3>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

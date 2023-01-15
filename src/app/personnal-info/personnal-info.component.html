@@ -1,0 +1,18 @@
+<div>
+    <h2>{{info.title}}</h2>
+    <P></P>
+    <form>
+        <div>
+            <label for="name">{{info.labels.label1}}</label>
+            <input type="text" id="name" [(ngModel)]="info.user.userName" alt="Name">
+        </div>
+        <div>
+            <label for="mail">{{info.labels.label2}}</label>
+            <input type="email" id="mail" [(ngModel)]="info.user.userMail" alt="mail">
+        </div>
+        <div>
+            <label for="phone">{{info.labels.label3}}</label>
+            <input type="tel" id="phone" [(ngModel)]="info.user.userPhone" alt="phone">
+        </div>
+    </form>
+</div>
